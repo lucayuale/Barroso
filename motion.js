@@ -15,7 +15,7 @@
     '.reveal:not(.hero-content)', '.hero-content > *', '.hero-bottom',
     '.section-head > *', '.record-panel', '.achievement',
     '.next-event .wrap > .eyebrow', '.event-layout > *', '.event-note',
-    '.gallery-toolbar', '.gallery-card', '.kit-row > *', '.reach-layout > *',
+    '.gallery-toolbar', '.gallery-card', '.fight-card', '.reach-metric', '.kit-row > *', '.reach-layout > *',
     '.contact .wrap > .eyebrow', '.contact-head > *', '.contact-links > a',
     '.footer-top > *'
   ].join(',');

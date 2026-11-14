@@ -293,10 +293,10 @@ window.VYB_CONFIG = {
       "galleryTitle": "THE MOMENT.",
       "galleryAccent": "EVERYTHING BEHIND IT.",
       "galleryAll": "All",
-      "galleryCompetition": "Competition",
-      "galleryJourney": "The journey",
-      "galleryFilters": "Filter photographs",
-      "galleryCount": "Images shown: {count}",
+      "galleryCompetition": "Professional career",
+      "galleryJourney": "Amateur career",
+      "galleryFilters": "Filter competition moments",
+      "galleryCount": "Moments shown: {count}",
       "galleryOpen": "View photograph",
       "galleryClose": "Close gallery",
       "galleryPrev": "Previous photograph",
@@ -317,11 +317,11 @@ window.VYB_CONFIG = {
       "reachBody": "I share the process of a professional athlete: preparation, competition and life outside the cage. An opportunity for brands to become an authentic part of that journey.",
       "reachNumber": "13,000+",
       "reachLabel": "FOLLOWERS ACROSS INSTAGRAM AND TIKTOK",
-      "reachNote": "Figure reported in the November 2026 media kit. This is not a live follower counter.",
+      "reachNote": "Historical figures supplied by the athlete in his November 2026 material. These are not live metrics and do not guarantee future results.",
       "contactEye": "05 / THE NEXT STEP",
       "contactTitle": "LET’S BUILD",
       "contactAccent": "TOGETHER.",
-      "contactBody": "Sponsorship, media and collaborations. If your brand or project connects with this journey, let’s talk.",
+      "contactBody": "Training coaching, sponsorships, media and collaborations. Tell me what you have in mind and let’s talk.",
       "contactMail": "Send me an email",
       "contactWhatsapp": "Let’s talk on WhatsApp",
       "contactInstagram": "Follow my journey",
@@ -331,7 +331,19 @@ window.VYB_CONFIG = {
       "footerCredit": "Design & development by VYB",
       "backTop": "Back to top",
       "noScript": "Enable JavaScript for the language selector and interactive gallery. Contact links remain available.",
-      "teamLabel": "MMA / BETTA TEAM"
+      "teamLabel": "MMA / BETTA TEAM",
+      "navCoaching": "Coaching",
+      "coachingEye": "EDUCATION / COACHING",
+      "coachingTitle": "THE EXPERIENCE.",
+      "coachingAccent": "SHARED WITH YOU.",
+      "coachingLead": "A UGR graduate in Physical Activity. Training grounded in knowledge and experience.",
+      "coachingCTA": "Ask about coaching",
+      "coachingNote": "Tell me about your goals and I’ll explain how I work.",
+      "coachingDate": "28 NOV 2025 / UGR GRADUATION",
+      "clipPending": "Video for this milestone is not yet available.",
+      "videoUnsupported": "Your browser cannot play this video.",
+      "videoOpen": "Open video",
+      "videoError": "The video could not be loaded. You can try opening it directly."
     },
     "es": {
       "skip": "Saltar al contenido",
@@ -379,10 +391,10 @@ window.VYB_CONFIG = {
       "galleryTitle": "EL MOMENTO.",
       "galleryAccent": "TODO LO QUE HAY DETRÁS.",
       "galleryAll": "Todo",
-      "galleryCompetition": "Competencia",
-      "galleryJourney": "El recorrido",
-      "galleryFilters": "Filtrar fotografías",
-      "galleryCount": "Fotografías visibles: {count}",
+      "galleryCompetition": "Etapa profesional",
+      "galleryJourney": "Etapa amateur",
+      "galleryFilters": "Filtrar momentos de competencia",
+      "galleryCount": "Momentos visibles: {count}",
       "galleryOpen": "Ampliar fotografía",
       "galleryClose": "Cerrar galería",
       "galleryPrev": "Fotografía anterior",
@@ -403,11 +415,11 @@ window.VYB_CONFIG = {
       "reachBody": "Comparto el proceso de un deportista profesional: preparación, competencia y vida fuera de la jaula. Una oportunidad para integrar marcas de forma auténtica en ese recorrido.",
       "reachNumber": "+13.000",
       "reachLabel": "SEGUIDORES ENTRE INSTAGRAM Y TIKTOK",
-      "reachNote": "Cifra declarada en el dosier de noviembre de 2026. No es un contador en tiempo real.",
+      "reachNote": "Métricas históricas declaradas por el atleta en su material de noviembre de 2026. No son datos en vivo ni garantizan resultados futuros.",
       "contactEye": "05 / EL PRÓXIMO PASO",
       "contactTitle": "HAGAMOS",
       "contactAccent": "EQUIPO.",
-      "contactBody": "Patrocinios, prensa y colaboraciones. Si tu marca o proyecto conecta con este camino, conversemos.",
+      "contactBody": "Asesorías de entrenamiento, patrocinios, prensa y colaboraciones. Contame qué tenés en mente y conversemos.",
       "contactMail": "Escribime por correo",
       "contactWhatsapp": "Hablemos por WhatsApp",
       "contactInstagram": "Seguí mi recorrido",
@@ -417,7 +429,199 @@ window.VYB_CONFIG = {
       "footerCredit": "Diseño y desarrollo por VYB",
       "backTop": "Volver al inicio",
       "noScript": "Activá JavaScript para usar el selector de idioma y la galería interactiva. Los enlaces de contacto siguen disponibles.",
-      "teamLabel": "MMA / BETTA TEAM"
+      "teamLabel": "MMA / BETTA TEAM",
+      "navCoaching": "Asesorías",
+      "coachingEye": "FORMACIÓN / ASESORÍAS",
+      "coachingTitle": "LA EXPERIENCIA.",
+      "coachingAccent": "TAMBIÉN SE COMPARTE.",
+      "coachingLead": "Licenciado en Actividad Física por la UGR. Entrenamiento con conocimiento y experiencia.",
+      "coachingCTA": "Consultá por las asesorías",
+      "coachingNote": "Contame qué buscás y te explico mi forma de trabajo.",
+      "coachingDate": "28 NOV 2025 / GRADUACIÓN UGR",
+      "clipPending": "Video de este hito aún no disponible.",
+      "videoUnsupported": "Tu navegador no puede reproducir este video.",
+      "videoOpen": "Abrir video",
+      "videoError": "No se pudo cargar el video. Podés intentar abrirlo directamente."
     }
-  }
+  },
+  "coaching": {
+    "graduationDate": "2025-11-28",
+    "paragraphs": [
+      {
+        "es": "Durante estos diez años en el alto rendimiento también me formé en ciencias del ejercicio y del entrenamiento. Estudié la Licenciatura en Actividad Física en la UGR, profundizando en anatomía, fisiología y biomecánica para comprender cómo planificar el entrenamiento en los deportes de combate y en otras disciplinas.",
+        "en": "Alongside ten years in high-performance sport, I studied exercise and training science. My degree in Physical Activity at UGR deepened my understanding of anatomy, physiology and biomechanics, helping me plan training for combat sports and other disciplines."
+      },
+      {
+        "es": "El 28 de noviembre de 2025 me recibí como licenciado. Desde entonces combino mi carrera deportiva con el asesoramiento presencial y online, sumando experiencia en distintos gimnasios de Rosario.",
+        "en": "I graduated on November 28, 2025. Since then, I have combined my sporting career with in-person and online coaching, gaining experience at different gyms in Rosario."
+      },
+      {
+        "es": "Hoy acompaño a personas que buscan mejorar su condición física, composición corporal o rendimiento general. También trabajo con deportistas amateurs; no con deportistas profesionales. Cada propuesta se adapta a los objetivos y al contexto de quien entrena.",
+        "en": "Today I coach people who want to improve their fitness, body composition or overall performance. I also work with amateur athletes, but not professional athletes. Each training approach is tailored to the individual’s goals and circumstances."
+      }
+    ],
+    "pillars": [
+      {
+        "es": "Formación universitaria",
+        "en": "Academic background"
+      },
+      {
+        "es": "Presencial y online",
+        "en": "In person & online"
+      },
+      {
+        "es": "Entrenamiento personalizado",
+        "en": "Personalized training"
+      }
+    ],
+    "message": {
+      "es": "Hola Agustín, me gustaría saber más sobre tus asesorías de entrenamiento.",
+      "en": "Hi Agustín, I’d like to learn more about your training coaching."
+    }
+  },
+  "reachMetrics": [
+    {
+      "value": 13000,
+      "prefix": "+",
+      "label": {
+        "es": "Seguidores entre Instagram y TikTok",
+        "en": "Followers across Instagram and TikTok"
+      }
+    },
+    {
+      "value": 10000,
+      "suffix": "",
+      "label": {
+        "es": "Seguidores en TikTok",
+        "en": "TikTok followers"
+      }
+    },
+    {
+      "value": 3000,
+      "label": {
+        "es": "Seguidores en Instagram",
+        "en": "Instagram followers"
+      }
+    },
+    {
+      "value": 619000,
+      "prefix": "+",
+      "label": {
+        "es": "Visualizaciones en TikTok",
+        "en": "TikTok views"
+      }
+    },
+    {
+      "value": 312000,
+      "prefix": "+",
+      "label": {
+        "es": "Vistas mensuales en Instagram",
+        "en": "Monthly Instagram views"
+      }
+    }
+  ],
+  "fightClips": [
+    {
+      "date": {
+        "es": "2023",
+        "en": "2023"
+      },
+      "title": {
+        "es": "CAMPEÓN ARGENTINO AMATEUR",
+        "en": "ARGENTINE AMATEUR CHAMPION"
+      },
+      "description": {
+        "es": "GAMMA · MMA amateur",
+        "en": "GAMMA · Amateur MMA"
+      },
+      "category": "journey",
+      "src": "",
+      "poster": ""
+    },
+    {
+      "date": {
+        "es": "2024",
+        "en": "2024"
+      },
+      "title": {
+        "es": "CAMPEÓN PANAMERICANO AMATEUR",
+        "en": "PAN-AMERICAN AMATEUR CHAMPION"
+      },
+      "description": {
+        "es": "GAMMA · MMA amateur",
+        "en": "GAMMA · Amateur MMA"
+      },
+      "category": "journey",
+      "src": "assets/videos/panamericano-2024.mp4",
+      "poster": "assets/videos/panamericano-2024.jpg"
+    },
+    {
+      "date": {
+        "es": "2025",
+        "en": "2025"
+      },
+      "title": {
+        "es": "PRIMERA PELEA PROFESIONAL",
+        "en": "FIRST PROFESSIONAL FIGHT"
+      },
+      "description": {
+        "es": "VGG · Argentina · TKO en el tercer round",
+        "en": "VGG · Argentina · Third-round TKO"
+      },
+      "category": "competition",
+      "src": "assets/videos/primera-pro-2025.mp4",
+      "poster": "assets/videos/primera-pro-2025.jpg"
+    },
+    {
+      "date": {
+        "es": "SEP 2025",
+        "en": "SEP 2025"
+      },
+      "title": {
+        "es": "SEGUNDA PELEA PROFESIONAL",
+        "en": "SECOND PROFESSIONAL FIGHT"
+      },
+      "description": {
+        "es": "Brasil · Sumisión en el primer round",
+        "en": "Brazil · First-round submission"
+      },
+      "category": "competition",
+      "src": "assets/videos/segunda-pro-2025.mp4",
+      "poster": "assets/videos/segunda-pro-2025.jpg"
+    },
+    {
+      "date": {
+        "es": "ABR 2026",
+        "en": "APR 2026"
+      },
+      "title": {
+        "es": "TERCERA PELEA PROFESIONAL",
+        "en": "THIRD PROFESSIONAL FIGHT"
+      },
+      "description": {
+        "es": "Brasil · TKO en el primer round",
+        "en": "Brazil · First-round TKO"
+      },
+      "category": "competition",
+      "src": "assets/videos/tercera-pro-2026.mp4",
+      "poster": "assets/videos/tercera-pro-2026.jpg"
+    },
+    {
+      "date": {
+        "es": "SEP 2026",
+        "en": "SEP 2026"
+      },
+      "title": {
+        "es": "CUARTA PELEA PROFESIONAL",
+        "en": "FOURTH PROFESSIONAL FIGHT"
+      },
+      "description": {
+        "es": "Unified MMA · Canadá",
+        "en": "Unified MMA · Canada"
+      },
+      "category": "competition",
+      "src": "assets/videos/cuarta-pro-2026.mp4",
+      "poster": "assets/videos/cuarta-pro-2026.jpg"
+    }
+  ]
 };

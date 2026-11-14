@@ -26,4 +26,4 @@ assert.equal(h.nextIndex(0,-1,3),2);assert.equal(h.nextIndex(2,1,3),0);
 assert.equal(h.https('javascript:alert(1)'),'');assert.equal(h.https('https://user:pass@example.com'),'');
 const preserved=JSON.parse(await read('tests/preserved-files.sha256.json'));
 for(const [name,hash]of Object.entries(preserved))assert.equal(createHash('sha256').update(await readFile(path.join(root,name))).digest('hex'),hash,'Changed preserved source '+name);
-console.log('PASS: local resources/anchors, bilingual keys and ES default, gallery helpers, safe URLs; original configuration, styles and all photographs preserved byte for byte.');
+console.log('PASS: local resources/anchors, bilingual keys and ES default, gallery helpers, safe URLs; original styles and all photographs preserved byte for byte; configuration intentionally updated from athlete corrections.');

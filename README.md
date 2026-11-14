@@ -38,3 +38,15 @@ Para publicar, subir los archivos extraídos a la raíz del repositorio de Barro
 ### Novedades v2
 
 Ver `NOVEDADES_V2.md`: entrada cinematográfica, trazo del apellido, composición de fotos y estadísticas con desplazamiento horizontal y botón de pausa.
+
+## Correcciones v3 — usar esta entrega
+
+Incluye asesorías, cinco videos optimizados, métricas y las animaciones anteriores. Ver `ACTUALIZACION_CORRECCIONES.md` para archivos y pruebas. Español predeterminado, EN seleccionable y guardado.
+
+```powershell
+Expand-Archive -LiteralPath "$HOME\Downloads\BARROSO_WEB_CORRECCIONES_Y_VIDEOS_v3.zip" -DestinationPath "$HOME\Downloads\Barroso-Correcciones-v3"
+Set-Location "$HOME\Downloads\Barroso-Correcciones-v3"
+py -m http.server 8103 --bind 127.0.0.1
+```
+
+Abrir http://127.0.0.1:8103/ . No requiere compilación ni dependencias. Para actualizar GitHub, extraer y subir los archivos de la tabla de ACTUALIZACION_CORRECCIONES.md a la raíz del repositorio de Barroso, incluyendo assets/videos/. Conservar styles.css, motion.css y assets/ existentes (también incluidos). Usar Ctrl+F5 después de publicar. No modificar el repositorio oficial de VYB.
