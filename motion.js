@@ -13,7 +13,7 @@
   let heroInView = true;
   const selectors = [
     '.reveal:not(.hero-content)', '.hero-content > *', '.hero-bottom',
-    '.fact', '.section-head > *', '.record-panel', '.achievement',
+    '.section-head > *', '.record-panel', '.achievement',
     '.next-event .wrap > .eyebrow', '.event-layout > *', '.event-note',
     '.gallery-toolbar', '.gallery-card', '.kit-row > *', '.reach-layout > *',
     '.contact .wrap > .eyebrow', '.contact-head > *', '.contact-links > a',
@@ -24,7 +24,38 @@
     el.classList.add('visible');
     observer?.unobserve(el);
   }
+  let factsPaused = false;
+  const factsCopy = {
+    es: { pause: 'Pausar movimiento', play: 'Reanudar movimiento' },
+    en: { pause: 'Pause movement', play: 'Resume movement' }
+  };
+  function refreshFacts() {
+    const holder = document.getElementById('fact-list');
+    const button = document.querySelector('.facts-motion-toggle');
+    if (!holder || !button) return;
+    if (!holder.querySelector('.facts-track')) {
+      const items = [...holder.querySelectorAll(':scope > .fact')];
+      if (!items.length) return;
+      const track = document.createElement('div'); track.className = 'facts-track';
+      const group = document.createElement('div'); group.className = 'facts-group';
+      items.forEach(item => { item.classList.remove('ab-reveal', 'visible'); group.append(item); });
+      track.append(group);
+      const repeat = group.cloneNode(true);
+      repeat.setAttribute('aria-hidden', 'true'); repeat.inert = true;
+      track.append(repeat); holder.replaceChildren(track);
+    }
+    holder.classList.toggle('is-paused', factsPaused);
+    const copy = factsCopy[root.lang] || factsCopy.es;
+    button.querySelector('[data-facts-pause-label]').textContent = factsPaused ? copy.play : copy.pause;
+    button.firstElementChild.textContent = factsPaused ? '▶' : 'Ⅱ';
+    button.setAttribute('aria-pressed', String(factsPaused));
+    button.hidden = reduced.matches;
+  }
+  document.querySelector('.facts-motion-toggle')?.addEventListener('click', () => {
+    factsPaused = !factsPaused; refreshFacts();
+  });
   function refresh() {
+    refreshFacts();
     for (const el of tracked) {
       if (!el.isConnected) { observer?.unobserve(el); tracked.delete(el); }
     }
@@ -55,6 +86,7 @@
   }
   function preferenceChanged() {
     if (reduced.matches) tracked.forEach(show);
+    refreshFacts();
     requestUpdate();
   }
   try {

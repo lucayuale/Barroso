@@ -5,7 +5,7 @@
 - `node --check app.js`, `node --check config.js` y `node --check motion.js`: PASS.
 - `node tests/verify-motion.mjs`: PASS. Recursos locales, anclas, IDs, claves ES/EN, idioma inicial, helpers de filtros y URLs y comparación SHA-256 de configuración, CSS original y ocho fotografías.
 - Chrome: seis contenedores reales de 320, 375, 390, 768, 1024 y 1440 px mediante iframe. Sin overflow horizontal en los seis. El área útil puede ser 15 px menor por la barra vertical del navegador.
-- Vista de escritorio y móvil: portada, jerarquía y fotos conservadas. Comparación de alto/ancho de las nueve secciones entre original y entrega en 390 px, mismo idioma: coincidencia exacta.
+- Vista de escritorio y móvil: portada, jerarquía y fotos conservadas. En la v1, comparación de alto/ancho de las nueve secciones entre original y entrega en 390 px, mismo idioma: coincidencia exacta.
 - ES → EN instantáneo y persistencia al volver a cargar; retorno a ES: PASS.
 - Menú móvil: abrir mediante interacción real, cerrar con Escape: PASS.
 - Galería: filtro Competition muestra tres imágenes; All restaura seis. Lightbox 1/3 → 2/3 con flecha derecha; Escape cierra y devuelve foco a la foto: PASS.
@@ -24,3 +24,14 @@
 - No se hizo una auditoría Lighthouse ni se afirma una puntuación de rendimiento. La capa añadida es JS/CSS nativo y no solicita recursos remotos.
 
 El proyecto recibido no incluía una suite previa de pruebas; se agregó el verificador indicado arriba. Los datos deportivos y la agenda siguen siendo los originales del dosier; esta edición no constituye una actualización o verificación de esa información.
+
+## Revalidación v2: impacto visual y récords horizontales
+
+- Misma suite Node y sintaxis JS: PASS. Configuración, CSS original y ocho fotografías intactos.
+- Chrome en 320, 375, 390, 768, 1024 y 1440 px: PASS, sin desbordamiento horizontal; seis fotos de galería disponibles en cada tamaño.
+- Franja horizontal: animación CSS activa y matriz de traslación avanzando. Pausa/reanudación y estado aria-pressed: PASS. Idioma EN cambia las etiquetas a Pause movement / Resume movement y conserva los valores 3–1–0, 22 y 10.
+- La repetición visual se marca aria-hidden e inert para que no duplique información accesible. Las cifras originales no se animan ni se inventan.
+- Fixture de movimiento reducido actualizada: animación de foto y franja `none`, grupo repetido oculto, botón de pausa oculto y cero elementos pendientes de revelar. No se afirma haber cambiado la preferencia nativa del sistema.
+- Composición de retrato: foto secundaria local cargada, retrato completamente revelado y sin overflow en escritorio.
+- Galería: filtro Competition, lightbox 1/3 a 2/3, Escape y recuperación de foco: PASS después de agregar la franja.
+- Publicación en GitHub Pages y prueba en móviles físicos/Safari: siguen pendientes. No se enviaron mensajes ni se publicaron cambios.
