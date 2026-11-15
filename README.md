@@ -50,3 +50,15 @@ py -m http.server 8103 --bind 127.0.0.1
 ```
 
 Abrir http://127.0.0.1:8103/ . No requiere compilación ni dependencias. Para actualizar GitHub, extraer y subir los archivos de la tabla de ACTUALIZACION_CORRECCIONES.md a la raíz del repositorio de Barroso, incluyendo assets/videos/. Conservar styles.css, motion.css y assets/ existentes (también incluidos). Usar Ctrl+F5 después de publicar. No modificar el repositorio oficial de VYB.
+
+## Entrega v4: galería completa
+
+Los seis hitos ya tienen video. Ver ACTUALIZACION_VIDEO_2023.md. Para ejecutar esta entrega:
+
+```powershell
+Expand-Archive -LiteralPath "$HOME\Downloads\BARROSO_WEB_6_VIDEOS_COMPLETO_v4.zip" -DestinationPath "$HOME\Downloads\Barroso-v4"
+Set-Location "$HOME\Downloads\Barroso-v4"
+py -m http.server 8103 --bind 127.0.0.1
+```
+
+Abrir http://127.0.0.1:8103/ . Esta entrega resuelve el pendiente de video 2023 mencionado en la documentación de v3.

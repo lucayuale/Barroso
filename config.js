@@ -535,8 +535,8 @@ window.VYB_CONFIG = {
         "en": "GAMMA · Amateur MMA"
       },
       "category": "journey",
-      "src": "",
-      "poster": ""
+      "src": "assets/videos/argentino-2023.mp4",
+      "poster": "assets/videos/argentino-2023.jpg"
     },
     {
       "date": {
