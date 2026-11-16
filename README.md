@@ -1,64 +1,41 @@
-# Agustín Barroso · Web liviana v2
+# Agustín Barroso — sitio oficial
 
-Español predeterminado, inglés seleccionable. El dosier se usó como referencia y no se incluye. Fotografías, trayectoria, galería y propuestas integradas en la web.
+Sitio web estático de presentación de Agustín Barroso, deportista de MMA de Rosario, Argentina. Incluye español (predeterminado) e inglés, trayectoria, asesorías, galería de seis videos y datos de contacto.
 
-Extraer este ZIP. Abrir PowerShell en la carpeta extraída:
+## Archivos
 
-```powershell
-py -m http.server 8102 --bind 127.0.0.1
-```
+- `index.html`: entrada principal.
+- `config.js`: textos, datos, traducciones y configuración.
+- `app.js`, `motion.js`, `updates.js`: funcionamiento, navegación y animaciones.
+- `styles.css`, `motion.css`, `updates.css`: estilos y diseño adaptable.
+- `assets/`: fotografías, imágenes y videos MP4 con sus portadas.
+- `.nojekyll`: evita procesamiento innecesario de GitHub Pages.
 
-Abrir http://127.0.0.1:8102/ . Detener con Ctrl+C.
+**No requiere Node.js, npm, bases de datos ni compilación.** No tiene backend ni recibe información de formularios en un servidor propio; los botones derivan a canales de contacto.
 
-Para GitHub Pages subir index.html, styles.css, app.js, config.js, assets/ y .nojekyll a la raíz de la rama publicada. No requiere Node ni instalación npm. No se publicó ningún repositorio automáticamente.
+## Probar localmente
 
-## Actualización de animaciones
+1. Abrí una terminal en la carpeta que contiene `index.html`.
+2. Ejecutá `python -m http.server 8080` (en Windows también puede servir `py -m http.server 8080`).
+3. Abrí `http://localhost:8080` en un navegador. Detené el servidor con `Ctrl+C`.
 
-Ver `CAMBIOS_ANIMACIONES.md` para las rutas exactas de reemplazo y `PRUEBAS_ANIMACIONES.md` para resultados y pendientes. No requiere dependencias ni compilación. El ZIP original no se modificó.
+## Subir a un repositorio de GitHub existente
 
-### Probar en Windows PowerShell
+1. Extraé el ZIP de entrega.
+2. En GitHub, abrí el **repositorio del sitio de Barroso** (no el de VYB).
+3. Entrá a **Add file → Upload files**.
+4. Arrastrá **todos los archivos y la carpeta `assets` desde el interior de la carpeta extraída**, no el ZIP comprimido ni una carpeta contenedora. `index.html` debe quedar en la **raíz** del repositorio.
+5. Confirmá los cambios con **Commit changes**. Subir los archivos no elimina automáticamente los documentos históricos que ya existieran en el repositorio: si querés limpiarlo completamente, borrá también allí los documentos viejos de actualizaciones, sin borrar los archivos actuales del sitio.
+6. Para GitHub Pages, entrá en **Settings → Pages** y seleccioná **Deploy from a branch**, la rama principal y la carpeta `/ (root)`.
 
-```powershell
-Expand-Archive -LiteralPath "$HOME\Downloads\BARROSO_WEB_IMPACTO_Y_RECORDS_v2.zip" -DestinationPath "$HOME\Downloads\Barroso-Impacto-v2"
-Set-Location "$HOME\Downloads\Barroso-Impacto-v2"
-py -m http.server 8096 --bind 127.0.0.1
-```
+URL de prueba habitual: `https://USUARIO.github.io/NOMBRE-REPOSITORIO/`. La URL real depende del usuario y repositorio de GitHub.
 
-Abrir `http://127.0.0.1:8096/`. Mantener la consola abierta. Detener con Ctrl+C.
+## Dominio `.com`
 
-Verificación opcional, si tenés Node.js:
+La compra y propiedad del dominio quedan a cargo del titular. Si se usa Cloudflare Registrar, el dominio puede apuntar a GitHub Pages mediante los DNS configurados en Cloudflare. En GitHub Pages, configurar **Settings → Pages → Custom domain** y después **Enforce HTTPS** cuando el certificado esté disponible. No hace falta contratar otro hosting para esta web estática.
 
-```powershell
-Set-Location "$HOME\Downloads\Barroso-Impacto-v2"
-node .\tests\verify-motion.mjs
-```
+Cuando el dominio definitivo esté activo, actualizar el valor `seo.canonical` dentro de `config.js` a la URL pública de la web. No se incluyó un dominio ficticio en el código.
 
-Para publicar, subir los archivos extraídos a la raíz del repositorio de Barroso, conservando la carpeta `assets`. No hay ningún comando de build.
+## Comprobación de entrega
 
-### Novedades v2
-
-Ver `NOVEDADES_V2.md`: entrada cinematográfica, trazo del apellido, composición de fotos y estadísticas con desplazamiento horizontal y botón de pausa.
-
-## Correcciones v3 — usar esta entrega
-
-Incluye asesorías, cinco videos optimizados, métricas y las animaciones anteriores. Ver `ACTUALIZACION_CORRECCIONES.md` para archivos y pruebas. Español predeterminado, EN seleccionable y guardado.
-
-```powershell
-Expand-Archive -LiteralPath "$HOME\Downloads\BARROSO_WEB_CORRECCIONES_Y_VIDEOS_v3.zip" -DestinationPath "$HOME\Downloads\Barroso-Correcciones-v3"
-Set-Location "$HOME\Downloads\Barroso-Correcciones-v3"
-py -m http.server 8103 --bind 127.0.0.1
-```
-
-Abrir http://127.0.0.1:8103/ . No requiere compilación ni dependencias. Para actualizar GitHub, extraer y subir los archivos de la tabla de ACTUALIZACION_CORRECCIONES.md a la raíz del repositorio de Barroso, incluyendo assets/videos/. Conservar styles.css, motion.css y assets/ existentes (también incluidos). Usar Ctrl+F5 después de publicar. No modificar el repositorio oficial de VYB.
-
-## Entrega v4: galería completa
-
-Los seis hitos ya tienen video. Ver ACTUALIZACION_VIDEO_2023.md. Para ejecutar esta entrega:
-
-```powershell
-Expand-Archive -LiteralPath "$HOME\Downloads\BARROSO_WEB_6_VIDEOS_COMPLETO_v4.zip" -DestinationPath "$HOME\Downloads\Barroso-v4"
-Set-Location "$HOME\Downloads\Barroso-v4"
-py -m http.server 8103 --bind 127.0.0.1
-```
-
-Abrir http://127.0.0.1:8103/ . Esta entrega resuelve el pendiente de video 2023 mencionado en la documentación de v3.
+El ZIP incluye los seis videos de la galería en `assets/videos/` y sus seis imágenes de portada. Mantener siempre las rutas relativas y los nombres de los archivos. Revisar la página publicada y la reproducción de videos en celular y escritorio después del despliegue.
